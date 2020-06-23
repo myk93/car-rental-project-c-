@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="755a9ed0-8e7d-47fb-9f93-ef86227f82f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c51fc424-6f0e-4446-a865-5a8cca5da42d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="bf1b78f6-2928-46ff-835c-32629b71424c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f97c02ea-3c6c-4614-8fca-49b15c555ed4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/mex" />
+    <MetadataFile FileName="BE.xsd" MetadataType="Schema" ID="f0dc642c-cc2a-4c57-b482-2c0099113879" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

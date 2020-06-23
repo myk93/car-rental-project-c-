@@ -1,0 +1,47 @@
+﻿<Window x:Class="PLForms.add_car"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="add_car" Height="475" Width="598">
+    <Grid Margin="0,0,0,-2">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="247,374,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="מספר רכב" HorizontalAlignment="Left" Margin="480,38,0,0" VerticalAlignment="Top" Width="63"/>
+        <TextBox Name="tb_nur" HorizontalAlignment="Left" Height="23" Margin="355,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="*תאריך יצור" HorizontalAlignment="Left" Margin="232,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="פרטי הרכב" HorizontalAlignment="Left" Margin="477,88,0,0" VerticalAlignment="Top" Width="79" Height="26"/>
+        <Label Content="יצרן" HorizontalAlignment="Left" Margin="369,69,0,0" VerticalAlignment="Top" Width="79" Height="26"/>
+        <Label Content="סוג" HorizontalAlignment="Left" Margin="244,69,0,0" VerticalAlignment="Top" Width="78" Height="26"/>
+        <Label Content="נפח מנוע" HorizontalAlignment="Left" Margin="131,70,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="tb_City" HorizontalAlignment="Left" Height="23" Margin="352,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="107" TextChanged="tb_City_TextChanged"/>
+        <TextBox x:Name="tb_str" HorizontalAlignment="Left" Height="23" Margin="224,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.908,0.609"/>
+        <ComboBox x:Name="me_bo" HorizontalAlignment="Left" Margin="131,96,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.075,0.727"/>
+        <ComboBox Name="gir" HorizontalAlignment="Left" Margin="390,156,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Content="גיר" HorizontalAlignment="Left" Margin="492,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="כמות נוסעים" HorizontalAlignment="Left" Margin="290,152,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cb_nos" HorizontalAlignment="Left" Margin="235,156,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="מספר דלתות" HorizontalAlignment="Left" Margin="136,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,1.308"/>
+        <ComboBox Name="cb_door" HorizontalAlignment="Left" Margin="76,156,0,0" VerticalAlignment="Top" Width="42"/>
+        <Label Content="*קילומטרים" HorizontalAlignment="Left" Margin="123,214,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="kilo" HorizontalAlignment="Left" Height="23" Margin="21,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97" TextChanged="kilo_TextChanged"/>
+        <Label Content="כתובת הסניף" HorizontalAlignment="Left" Margin="472,270,0,0" VerticalAlignment="Top" Width="83" Height="26"/>
+        <Label Content="עיר" HorizontalAlignment="Left" Margin="376,251,0,0" VerticalAlignment="Top" Width="70" Height="26"/>
+        <Label Content="רחוב" HorizontalAlignment="Left" Margin="240,251,0,0" VerticalAlignment="Top" Width="70" Height="26"/>
+        <Label Content="בנין" HorizontalAlignment="Left" Margin="157,252,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_City_Copy" HorizontalAlignment="Left" Height="23" Margin="352,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" TextChanged="tb_City_Copy_TextChanged"/>
+        <TextBox x:Name="tb_str_Copy" HorizontalAlignment="Left" Height="23" Margin="232,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.908,0.609" TextChanged="tb_str_Copy_TextChanged"/>
+        <ComboBox x:Name="me_bo_Copy" HorizontalAlignment="Left" Margin="144,278,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.075,0.727"/>
+        <Label Content="רשיון רכב" HorizontalAlignment="Left" Margin="477,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.053,-0.038"/>
+        <Label Content="תאריך טסט" HorizontalAlignment="Left" Margin="235,192,0,0" VerticalAlignment="Top"/>
+        <Label Content="סוג הרישיון" HorizontalAlignment="Left" Margin="389,192,0,0" VerticalAlignment="Top" Width="70" Height="26"/>
+        <ComboBox x:Name="cobo" HorizontalAlignment="Left" Margin="389,219,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.5,0.5">
+            <ComboBoxItem Content="A" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="B" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="C" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="D" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="E" HorizontalAlignment="Center" />
+        </ComboBox>
+        <Label Content="אין חובה למלות שדה זה*" HorizontalAlignment="Left" Margin="30,400,0,0" VerticalAlignment="Top" Width="141"/>
+        <DatePicker Name="d_ya" HorizontalAlignment="Left" Margin="110,41,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="d_rr" HorizontalAlignment="Left" Margin="220,219,0,0" VerticalAlignment="Top" Width="113"/>
+
+    </Grid>
+</Window>

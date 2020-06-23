@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PLForms" x:Class="PLForms.Window1"
+        Title="Window1" Height="354" Width="399">
+    <Grid Margin="0,0,16,-32">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter HorizontalAlignment="Left" Height="0" Margin="213,225,0,0" VerticalAlignment="Top" Width="0" Grid.ColumnSpan="2"/>
+        <Button Content="הוספה" HorizontalAlignment="Right" Margin="0,101,57,0" VerticalAlignment="Top" Width="118" Height="50"  Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Button Content="מחיקה" HorizontalAlignment="Right" Margin="0,101,179,0" VerticalAlignment="Top" Width="118" Height="50" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <Button Content="הוספה רנדומלית" HorizontalAlignment="Right" Margin="0,151,57,0" VerticalAlignment="Top" Width="118" Height="50" Grid.ColumnSpan="2" Click="Button_Click_2"/>
+        <Button Content="עדכון" HorizontalAlignment="Right" Margin="0,151,179,0" VerticalAlignment="Top" Width="118" Height="50" Grid.ColumnSpan="2"/>
+        <Button Grid.ColumnSpan="2" Content="הצגה למשתמש" HorizontalAlignment="Left" Margin="69,201,0,0" VerticalAlignment="Top" Width="118" Height="50"/>
+        <Button Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Margin="191,201,0,0" VerticalAlignment="Top" Width="118" Height="50"/>
+    </Grid>
+</Window>

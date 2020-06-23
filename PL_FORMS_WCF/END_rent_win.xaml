@@ -1,0 +1,68 @@
+﻿<Window x:Class="PL_FORMS.END_rent_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="END_rent_win" Height="459.21" Width="663.158">
+    <Grid Background="#FFE8B7B7">
+        <Label Content="פרטי ההזמנה:" HorizontalAlignment="Left" Margin="510,78,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" FontSize="18" Width="123"/>
+        <Label Content="סגירת הזמנה :" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Top" Height="41" Width="175" FlowDirection="RightToLeft" FontSize="22" FontFamily="Rockwell Extra Bold"/>
+        <Label Content="מס' הזמנה:" HorizontalAlignment="Left" Margin="541,50,0,0" VerticalAlignment="Top" Width="73" FlowDirection="RightToLeft"/>
+        <Label Content="מספר מקומות :" HorizontalAlignment="Left" Margin="501,183,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <Label Content="ת. הילוכים:" HorizontalAlignment="Left" Margin="534,153,0,0" VerticalAlignment="Top" Height="30" Width="65" FlowDirection="RightToLeft" RenderTransformOrigin="0.033,0.5"/>
+        <Label Content="מספר דלתות :" HorizontalAlignment="Left" Margin="501,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <Label Content="מספר ק&quot;מ :" HorizontalAlignment="Left" Margin="501,245,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <Label Content="קטגוריה :" HorizontalAlignment="Left" Margin="541,276,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" RenderTransformOrigin="0.487,2.512"/>
+
+
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="166,374,0,0" VerticalAlignment="Top" Width="75" Background="White"/>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="63,374,0,0" VerticalAlignment="Top" Width="75" Background="White" Click="Button_Click"/>
+        <Label Content="כדי לסגור עליך למלות את השדות:" HorizontalAlignment="Left" Margin="76,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.269" FlowDirection="RightToLeft" FontSize="18"/>
+        <Label Content=":מרחק סופי" HorizontalAlignment="Left" Margin="224,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="112">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.095"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="תאריך :" HorizontalAlignment="Left" Margin="127,32,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" FontSize="16" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="end_KM" HorizontalAlignment="Left" Height="23" Margin="127,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" TextChanged="end_KM_TextChanged"/>
+        <Label Content=": תקין/לא ת" HorizontalAlignment="Left" Margin="222,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="112">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.095"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="combo_tkinut" HorizontalAlignment="Left" Margin="127,183,0,0" VerticalAlignment="Top" Width="86" SelectionChanged="combo_tkinut_SelectionChanged">
+        </ComboBox>
+        <Label Content="תאריך התחלה :" HorizontalAlignment="Left" Margin="507,307,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" RenderTransformOrigin="0.487,2.512"/>
+        <Label Content="מספר רישוי :" HorizontalAlignment="Left" Margin="501,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <ComboBox HorizontalAlignment="Left" Name="combo_rent" Margin="390,54,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combo_rent_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="text_risuy" Margin="441,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Foreground="#FF2B18E6" Height="19" Background="#FFF1F5F5"/>
+        <TextBlock HorizontalAlignment="Left" Name="text_gir" Margin="441,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" Name="texst_mekomot" Margin="441,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" Name="texst_doors" Margin="441,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="start_KM" Margin="441,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="text_category" Margin="441,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="text_stat_time" Margin="441,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="69" Foreground="#FF430FF3"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="texst_end_time" Margin="49,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="78" Foreground="#FF430FF3"/>
+        <Label Content=": מרחק נטו  " HorizontalAlignment="Left" Margin="225,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="112">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.095"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" x:Name="neto_dis" Margin="127,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF5FBFB" Height="21" Width="86" Foreground="#FF430FF3"/>
+
+    </Grid>
+
+</Window>

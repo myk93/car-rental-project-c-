@@ -1,0 +1,10 @@
+﻿<Window x:Class="wcf_UI.show_car"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="show_car"  Height="353.732" Width="676.119">
+    <Grid Height="323" VerticalAlignment="Top" HorizontalAlignment="Right" Width="668">
+        <DataGrid Name="dg_r" Margin="0,61,0,-179" SelectionChanged="dg_r_SelectionChanged_1" HorizontalAlignment="Left" Width="668" Height="441" VerticalAlignment="Top"/>
+        <Label Content="רשימת רכבים:" HorizontalAlignment="Left" Margin="266,0,0,277" VerticalAlignment="Bottom" Width="154" Height="36" FontSize="20" FontFamily="Segoe UI Semibold" FlowDirection="RightToLeft"/>
+
+    </Grid>
+</Window>

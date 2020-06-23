@@ -1,0 +1,14 @@
+﻿<Window x:Class="PL_FORMS.Resources.del_fault_car_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="del_fault_car_win" Height="274.776" Width="288.06">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="166,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="מחיקת קשר רכב ותקלה:" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="250" FlowDirection="RightToLeft" FontSize="20" FontFamily="Segoe WP Black"/>
+        <Label Content="בחר את מספר הרישוי:" HorizontalAlignment="Left" Margin="65,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.005,-1.881" Width="144" FlowDirection="RightToLeft"/>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="163,168,0,0" VerticalAlignment="Top" Width="75" Height="29" Background="White" Click="Button_Click"/>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="43,168,0,0" VerticalAlignment="Top" Width="75" Height="29" Background="White" Click="Button_Click_1"/>
+        <ComboBox x:Name="cb_car" HorizontalAlignment="Left" Margin="43,87,0,0" VerticalAlignment="Top" Width="195" SelectionChanged="ComboBox_SelectionChanged"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="PL_FORMS.fault_car_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="fault_car_win" Height="389.552" Width="522.388">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/gocar.jpg"/>
+        </Grid.Background>
+        <Button Content="" HorizontalAlignment="Left" Margin="378,257,0,0" VerticalAlignment="Top" Width="75" Height="66" BorderThickness="0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/04.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="222,257,0,0" VerticalAlignment="Top" Width="75" Height="66" BorderThickness="0" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/14.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="54,257,0,0" VerticalAlignment="Top" Width="75" Height="66" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/עזרה.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="הוספה" HorizontalAlignment="Left" Margin="393,323,0,0" VerticalAlignment="Top"/>
+        <Label Content="מחיקה" HorizontalAlignment="Left" Margin="237,323,0,0" VerticalAlignment="Top"/>
+        <Label Content="מידע" HorizontalAlignment="Left" Margin="72,323,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.544,0.503"/>
+        <Label Content="קישור תקלה לרכב :" HorizontalAlignment="Left" Margin="282,10,0,0" VerticalAlignment="Top" Height="42" Width="171" FlowDirection="RightToLeft" FontSize="18" FontFamily="Segoe UI Semibold"/>
+
+    </Grid>
+</Window>

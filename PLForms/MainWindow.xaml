@@ -1,0 +1,22 @@
+﻿<Window x:Class="PLForms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid RenderTransformOrigin="0.538,0.48">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\מני\Documents\Visual Studio 2013\Projects\dotNet5775_Project01_6488_5684\PLForms\Properties/photo_2015-01-14_15-07-19.jpg"/>
+        </Grid.Background>
+        <Button Content="היכנס" HorizontalAlignment="Left" Margin="213,179,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <ComboBox x:Name="cmb" RenderTransformOrigin="0.489,5.5" Width="121" SelectionChanged="ComboBox_SelectionChanged" Height="29" Margin="181,27,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <ComboBoxItem Content="לקוח" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="רכב" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="תקלה" HorizontalAlignment="Center" />
+            <ComboBoxItem Content="חוזה השכרה" HorizontalAlignment="Center"/>
+        </ComboBox>
+        <PasswordBox Name="pass_box" Margin="181,125,215,168" RenderTransformOrigin="0.735,0.462"/>
+        <TextBox Name="tex_box" HorizontalAlignment="Left" Height="23" Margin="181,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
+        <Label Content="שם משתמש" HorizontalAlignment="Left" Margin="343,99,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="סיסמא" HorizontalAlignment="Left" Margin="367,125,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="שמירת סיסמא" HorizontalAlignment="Left" Margin="318,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.606,0.6" FlowDirection="RightToLeft" Height="20" Width="94"  />
+    </Grid>
+</Window>

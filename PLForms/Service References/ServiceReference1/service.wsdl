@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BL_imp" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/BE" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="BlServiceContract_add_client_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_client" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_client_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_clientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_client_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_client" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_client_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_clientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_car_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_car" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_car_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_carResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_car_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_car" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_car_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_carResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_rent_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_rent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_rent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_rentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_rent_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_rent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_rent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_rentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_Fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:del_Fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_del_Fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:del_FaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_Car_fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_Car_fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_add_Car_fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_Car_faultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_Del_car_fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:Del_car_fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_Del_car_fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Del_car_faultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_Del_all_car_fault_InputMessage">
+    <wsdl:part name="parameters" element="tns:Del_all_car_fault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_Del_all_car_fault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Del_all_car_faultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_clint_young_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_clint_young" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_clint_young_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_clint_youngResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_close_rent_InputMessage">
+    <wsdl:part name="parameters" element="tns:close_rent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_close_rent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:close_rentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_iretur_InputMessage">
+    <wsdl:part name="parameters" element="tns:iretur" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_iretur_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ireturResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_sum_rents_InputMessage">
+    <wsdl:part name="parameters" element="tns:sum_rents" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_sum_rents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sum_rentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_car_profits_InputMessage">
+    <wsdl:part name="parameters" element="tns:car_profits" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_car_profits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:car_profitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_fault_list_from_bottom_InputMessage">
+    <wsdl:part name="parameters" element="tns:fault_list_from_bottom" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_fault_list_from_bottom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fault_list_from_bottomResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_problem_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_problem" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_problem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_problemResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_total_price_InputMessage">
+    <wsdl:part name="parameters" element="tns:total_price" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_total_price_OutputMessage">
+    <wsdl:part name="parameters" element="tns:total_priceResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_client_exist_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_client_exist" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_client_exist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_client_existResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_car_exist_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_car_exist" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_car_exist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_car_existResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_rent_exist_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_rent_exist" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_rent_exist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_rent_existResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_fault_code_exist_InputMessage">
+    <wsdl:part name="parameters" element="tns:is_fault_code_exist" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_is_fault_code_exist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:is_fault_code_existResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_get_time_from_last_rent_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_time_from_last_rent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_get_time_from_last_rent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_time_from_last_rentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_can_rent_InputMessage">
+    <wsdl:part name="parameters" element="tns:can_rent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_can_rent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:can_rentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_return_avilable_cars_InputMessage">
+    <wsdl:part name="parameters" element="tns:return_avilable_cars" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_return_avilable_cars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:return_avilable_carsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfCar" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_update_time_adn_distance_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_time_adn_distance" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_update_time_adn_distance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_time_adn_distanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfRent_InputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfRent" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfRent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfRentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfClient" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfFault_InputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfFault" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_createListOfFault_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createListOfFaultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_select_client_InputMessage">
+    <wsdl:part name="parameters" element="tns:select_client" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_select_client_OutputMessage">
+    <wsdl:part name="parameters" element="tns:select_clientResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_sinun_car_InputMessage">
+    <wsdl:part name="parameters" element="tns:sinun_car" />
+  </wsdl:message>
+  <wsdl:message name="BlServiceContract_sinun_car_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sinun_carResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BlServiceContract">
+    <wsdl:operation name="add_client">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/add_client" message="tns:BlServiceContract_add_client_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/add_clientResponse" message="tns:BlServiceContract_add_client_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_client">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/del_client" message="tns:BlServiceContract_del_client_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/del_clientResponse" message="tns:BlServiceContract_del_client_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="add_car">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/add_car" message="tns:BlServiceContract_add_car_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/add_carResponse" message="tns:BlServiceContract_add_car_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_car">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/del_car" message="tns:BlServiceContract_del_car_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/del_carResponse" message="tns:BlServiceContract_del_car_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="add_rent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/add_rent" message="tns:BlServiceContract_add_rent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/add_rentResponse" message="tns:BlServiceContract_add_rent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_rent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/del_rent" message="tns:BlServiceContract_del_rent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/del_rentResponse" message="tns:BlServiceContract_del_rent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="add_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/add_Fault" message="tns:BlServiceContract_add_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/add_FaultResponse" message="tns:BlServiceContract_add_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="del_Fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/del_Fault" message="tns:BlServiceContract_del_Fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/del_FaultResponse" message="tns:BlServiceContract_del_Fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="add_Car_fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/add_Car_fault" message="tns:BlServiceContract_add_Car_fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/add_Car_faultResponse" message="tns:BlServiceContract_add_Car_fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Del_car_fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/Del_car_fault" message="tns:BlServiceContract_Del_car_fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/Del_car_faultResponse" message="tns:BlServiceContract_Del_car_fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Del_all_car_fault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/Del_all_car_fault" message="tns:BlServiceContract_Del_all_car_fault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/Del_all_car_faultResponse" message="tns:BlServiceContract_Del_all_car_fault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_clint_young">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_clint_young" message="tns:BlServiceContract_is_clint_young_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_clint_youngResponse" message="tns:BlServiceContract_is_clint_young_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="close_rent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/close_rent" message="tns:BlServiceContract_close_rent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/close_rentResponse" message="tns:BlServiceContract_close_rent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iretur">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/iretur" message="tns:BlServiceContract_iretur_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/ireturResponse" message="tns:BlServiceContract_iretur_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sum_rents">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/sum_rents" message="tns:BlServiceContract_sum_rents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/sum_rentsResponse" message="tns:BlServiceContract_sum_rents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="car_profits">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/car_profits" message="tns:BlServiceContract_car_profits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/car_profitsResponse" message="tns:BlServiceContract_car_profits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fault_list_from_bottom">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/fault_list_from_bottom" message="tns:BlServiceContract_fault_list_from_bottom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/fault_list_from_bottomResponse" message="tns:BlServiceContract_fault_list_from_bottom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_problem">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_problem" message="tns:BlServiceContract_is_problem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_problemResponse" message="tns:BlServiceContract_is_problem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="total_price">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/total_price" message="tns:BlServiceContract_total_price_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/total_priceResponse" message="tns:BlServiceContract_total_price_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_client_exist">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_client_exist" message="tns:BlServiceContract_is_client_exist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_client_existResponse" message="tns:BlServiceContract_is_client_exist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_car_exist">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_car_exist" message="tns:BlServiceContract_is_car_exist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_car_existResponse" message="tns:BlServiceContract_is_car_exist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_rent_exist">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_rent_exist" message="tns:BlServiceContract_is_rent_exist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_rent_existResponse" message="tns:BlServiceContract_is_rent_exist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="is_fault_code_exist">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/is_fault_code_exist" message="tns:BlServiceContract_is_fault_code_exist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/is_fault_code_existResponse" message="tns:BlServiceContract_is_fault_code_exist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_time_from_last_rent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/get_time_from_last_rent" message="tns:BlServiceContract_get_time_from_last_rent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/get_time_from_last_rentResponse" message="tns:BlServiceContract_get_time_from_last_rent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="can_rent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/can_rent" message="tns:BlServiceContract_can_rent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/can_rentResponse" message="tns:BlServiceContract_can_rent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="return_avilable_cars">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/return_avilable_cars" message="tns:BlServiceContract_return_avilable_cars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/return_avilable_carsResponse" message="tns:BlServiceContract_return_avilable_cars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createListOfCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/createListOfCar" message="tns:BlServiceContract_createListOfCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/createListOfCarResponse" message="tns:BlServiceContract_createListOfCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_time_adn_distance">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/update_time_adn_distance" message="tns:BlServiceContract_update_time_adn_distance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/update_time_adn_distanceResponse" message="tns:BlServiceContract_update_time_adn_distance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createListOfRent">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/createListOfRent" message="tns:BlServiceContract_createListOfRent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/createListOfRentResponse" message="tns:BlServiceContract_createListOfRent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createListOfClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/createListOfClient" message="tns:BlServiceContract_createListOfClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/createListOfClientResponse" message="tns:BlServiceContract_createListOfClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createListOfFault">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/createListOfFault" message="tns:BlServiceContract_createListOfFault_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/createListOfFaultResponse" message="tns:BlServiceContract_createListOfFault_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="select_client">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/select_client" message="tns:BlServiceContract_select_client_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/select_clientResponse" message="tns:BlServiceContract_select_client_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sinun_car">
+      <wsdl:input wsaw:Action="http://tempuri.org/BlServiceContract/sinun_car" message="tns:BlServiceContract_sinun_car_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BlServiceContract/sinun_carResponse" message="tns:BlServiceContract_sinun_car_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_BlServiceContract" type="tns:BlServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="add_client">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/add_client" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_client">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/del_client" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_car">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/add_car" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_car">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/del_car" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_rent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/add_rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_rent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/del_rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/add_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="del_Fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/del_Fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_Car_fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/add_Car_fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_car_fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/Del_car_fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_all_car_fault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/Del_all_car_fault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_clint_young">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_clint_young" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close_rent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/close_rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="iretur">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/iretur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sum_rents">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/sum_rents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="car_profits">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/car_profits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fault_list_from_bottom">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/fault_list_from_bottom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_problem">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_problem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="total_price">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/total_price" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_client_exist">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_client_exist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_car_exist">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_car_exist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_rent_exist">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_rent_exist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="is_fault_code_exist">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/is_fault_code_exist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_time_from_last_rent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/get_time_from_last_rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="can_rent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/can_rent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="return_avilable_cars">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/return_avilable_cars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createListOfCar">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/createListOfCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_time_adn_distance">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/update_time_adn_distance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createListOfRent">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/createListOfRent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createListOfClient">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/createListOfClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createListOfFault">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/createListOfFault" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="select_client">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/select_client" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sinun_car">
+      <soap:operation soapAction="http://tempuri.org/BlServiceContract/sinun_car" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BL_imp">
+    <wsdl:port name="BasicHttpBinding_BlServiceContract" binding="tns:BasicHttpBinding_BlServiceContract">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/BL_WcfService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

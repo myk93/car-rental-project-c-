@@ -1,0 +1,18 @@
+﻿<Window x:Class="PL_FORMS.update_fault_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="update_fault_win" Height="320.301" Width="440.338">
+    <Grid Background="#FF86C3EE">
+        <Label x:Name="combo_text" Content="עדכון תקלה :" HorizontalAlignment="Left" Margin="166,20,0,0" VerticalAlignment="Top" Width="192" FlowDirection="RightToLeft" FontSize="20" FontFamily="Segoe UI Black"/>
+        <Label Content="מס' תקלה :" HorizontalAlignment="Left" Margin="333,89,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <Label Content="נושא עדכון :" HorizontalAlignment="Left" Margin="327,148,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox Name="cb_ni" HorizontalAlignment="Left" Margin="195,152,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.247,-0.508" FlowDirection="RightToLeft" SelectionChanged="cb_ni_SelectionChanged" IsEditable="True">
+        </ComboBox>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="146,231,0,0" VerticalAlignment="Top" Width="75" Background="#FFFDFDFD" Click="Button_Click"/>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="55,231,0,0" VerticalAlignment="Top" Width="75" Background="White" Click="Button_Click_1"/>
+        <ComboBox Name="cb_m" HorizontalAlignment="Left" Margin="195,93,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_m_SelectionChanged"/>
+        <ComboBox Name="cb_trans" HorizontalAlignment="Left" Margin="135,152,0,0" VerticalAlignment="Top" Width="46" Visibility="Hidden"/>
+        <TextBox Name="tb_trans" HorizontalAlignment="Left" Height="23" Margin="85,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"   Width="80" Visibility="Hidden" TextChanged="tb_trans_TextChanged"/>
+
+    </Grid>
+</Window>

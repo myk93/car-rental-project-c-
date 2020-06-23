@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/BE" />
+  <xs:element name="add_client">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cli" nillable="true" type="q1:Client" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_clientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_client">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_clientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_car">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="ca" nillable="true" type="q2:car" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_carResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_car">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="car_number" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_carResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_rent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="rent" nillable="true" type="q3:Renting" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_rentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_rent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rent_code" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_rentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_Fault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="fail" nillable="true" type="q4:Fault" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_FaultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_Fault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Fault_number" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del_FaultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_Car_fault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cf" nillable="true" type="q5:Car_Fault" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_Car_faultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Del_car_fault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="a" type="xs:int" />
+        <xs:element minOccurs="0" name="fault_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Del_car_faultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Del_all_car_fault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="a" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Del_all_car_faultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_clint_young">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cli" nillable="true" type="q6:Client" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_clint_youngResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_clint_youngResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="close_rent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rent_code" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="close_rentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="iretur">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ireturResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="ireturResult" nillable="true" type="q7:ArrayOfRenting" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sum_rents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="start" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="end" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sum_rentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sum_rentsResult" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_profits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_profitsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="car_profitsResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fault_list_from_bottom">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fault_list_from_bottomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="fault_list_from_bottomResult" nillable="true" type="q8:ArrayOffault_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_problem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_problemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_problemResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="total_price">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rent_numb" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="total_priceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="total_priceResult" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_client_exist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_client_existResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_client_existResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_car_exist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="license_number" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_car_existResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_car_existResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_rent_exist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="run_code" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_rent_existResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_rent_existResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_fault_code_exist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fault_coded" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="is_fault_code_existResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="is_fault_code_existResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_time_from_last_rent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_time_from_last_rentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="get_time_from_last_rentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="can_rent">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="can_rentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="can_rentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="return_avilable_cars">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="return_avilable_carsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="return_avilable_carsResult" nillable="true" type="q9:ArrayOfcar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfCar">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfCarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_time_adn_distance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_time_adn_distanceResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfRent">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfRentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfClient">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfClientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfFault">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListOfFaultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="select_client">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cat" type="q10:catagory_of_vehicles" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="select_clientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="select_clientResult" nillable="true" type="q11:ArrayOfClient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sinun_car">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="gi" type="q12:gear" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="cat" type="q13:catagory_of_vehicles" />
+        <xs:element minOccurs="0" name="mak" type="xs:int" />
+        <xs:element minOccurs="0" name="dor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sinun_carResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BE" minOccurs="0" name="sinun_carResult" nillable="true" type="q14:ArrayOfcar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

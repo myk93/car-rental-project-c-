@@ -1,0 +1,18 @@
+﻿<Window x:Class="PL_FORMS.update_car_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="update_car_win" Height="347.97" Width="467.443">
+    <Grid Background="#FF67DCD2" Margin="0,0,2,0">
+        <Label Content="עדכון רכב :" HorizontalAlignment="Left" Margin="93,22,0,0" VerticalAlignment="Top" Width="192" FlowDirection="RightToLeft" FontSize="20" FontFamily="Segoe UI Black"/>
+        <Label Content="מס' רישוי :" HorizontalAlignment="Left" Margin="275,77,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <Label Content="נושא עדכון :" HorizontalAlignment="Left" Margin="269,136,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox Name="cb_nosa" HorizontalAlignment="Left" IsEnabled="False" Margin="137,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.247,-0.508" FlowDirection="RightToLeft" SelectionChanged="cb_nosa_SelectionChanged">
+        </ComboBox>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="264,237,0,0" VerticalAlignment="Top" Width="75" Background="#FFFDFDFD" Click="Button_Click"/>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="137,237,0,0" VerticalAlignment="Top" Width="75" Background="White"/>
+        <ComboBox Name="cb_car" HorizontalAlignment="Left" Margin="137,77,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_car_SelectionChanged"/>
+        <ComboBox Name="cb_trans" HorizontalAlignment="Left" Margin="137,186,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden">
+        </ComboBox>
+        <TextBox Name="tb_trans" Height="23" TextWrapping="Wrap" Text="" Width="120" Margin="137,186,200,108" TextChanged="tb_trans_TextChanged" Visibility="Hidden"/>
+    </Grid>
+</Window>

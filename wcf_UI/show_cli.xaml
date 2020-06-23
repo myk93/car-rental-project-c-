@@ -1,0 +1,10 @@
+﻿<Window x:Class="wcf_UI.show_cli"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="show_cli"  Height="353.732" Width="676.119">
+    <Grid Height="323" VerticalAlignment="Top" HorizontalAlignment="Right" Width="668">
+        <Label Content="רשימת לקוח:" HorizontalAlignment="Left" Margin="267,0,0,287" VerticalAlignment="Bottom" Width="154" Height="36" FontSize="20" FontFamily="Segoe UI Semibold" FlowDirection="RightToLeft"/>
+        <DataGrid Name="dg_d" Margin="0,63,0,-44" Height="304" VerticalAlignment="Top" HorizontalAlignment="Right" Width="668"/>
+
+    </Grid>
+</Window>

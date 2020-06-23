@@ -1,0 +1,33 @@
+﻿<Window x:Class="PL_FORMS.update_rent_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="update_rent_win"  Height="320.301" Width="585.338">
+    <Grid Background="#FFE8B7B7">
+        <Label Content="עדכון הזמנה :" HorizontalAlignment="Left" Margin="166,20,0,0" VerticalAlignment="Top" Width="192" FlowDirection="RightToLeft" FontSize="20" FontFamily="Segoe UI Black"/>
+        <Label Content="מס' הזמנה :" HorizontalAlignment="Left" Margin="471,127,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <Label Content="נושא עדכון :" HorizontalAlignment="Left" Margin="472,173,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox HorizontalAlignment="Left" Name="nose" Visibility="Hidden" Margin="340,177,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.247,-0.508" FlowDirection="RightToLeft" SelectionChanged="nose_SelectionChanged">
+
+        </ComboBox>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="38,259,0,0" VerticalAlignment="Top" Width="75" Background="#FFFDFDFD" Click="Button_Click"/>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="169,259,0,0" VerticalAlignment="Top" Width="75" Background="White" Click="Button_Click"/>
+        <ComboBox HorizontalAlignment="Left" Name="com_rent" Margin="340,131,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="מצב ההזמנה  :" HorizontalAlignment="Left" Margin="456,82,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="matzav" Margin="340,86,0,0" VerticalAlignment="Top" Width="92" FlowDirection="RightToLeft" SelectionChanged="matzav_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Visibility="Hidden" x:Name="nose_end" Margin="340,177,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.247,-0.508" FlowDirection="RightToLeft" SelectionChanged="nose_end_SelectionChanged">
+
+        </ComboBox>
+        <Label Content="בחר נהג להוסיף :" Visibility="Hidden" Name="osafa" HorizontalAlignment="Left" Margin="169,82,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox HorizontalAlignment="Left" Visibility="Hidden" x:Name="driver" Margin="38,86,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="driver_SelectionChanged"/>
+        <Label Content="בחר מצב תקלה :" Name="te_takala" Visibility="Hidden" HorizontalAlignment="Left" Margin="147,82,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="takala" Visibility="Hidden" Margin="38,86,0,0" VerticalAlignment="Top" Width="92" FlowDirection="RightToLeft" SelectionChanged="takala_SelectionChanged"/>
+        <Label Content="בחר מרחק :" HorizontalAlignment="Left" Name="mer" Visibility="Hidden" Margin="163,86,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <TextBox HorizontalAlignment="Left" Name="merchak" Visibility="Hidden" Height="23" Margin="81,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <Label Content="בחר תשלוםלפני מע''מ :" HorizontalAlignment="Left" Name="pri" Visibility="Hidden" Margin="163,86,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <TextBox HorizontalAlignment="Left" Name="price" Visibility="Hidden"  Height="23" Margin="81,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" TextChanged="price_TextChanged"/>
+        <Button Content="עדכן" HorizontalAlignment="Left" Visibility="Hidden" Name="OK" Margin="28,82,0,0" VerticalAlignment="Top" Width="57" Click="OK_Click"/>
+       <!-- <Button Content="עדכן" HorizontalAlignment="Left"  Name="OK1" Margin="28,82,0,0" VerticalAlignment="Top" Width="57" Click="OK1_Click"/>
+        <Button Content="עדכן" HorizontalAlignment="Left" Visibility="Hidden" Name="OK0" Margin="28,82,0,0" VerticalAlignment="Top" Width="57" Click="OK0_Click"/>-->
+
+    </Grid>
+</Window>

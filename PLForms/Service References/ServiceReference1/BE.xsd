@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BE" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Client">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address1" type="tns:addres" />
+      <xs:element minOccurs="0" name="Age" type="xs:int" />
+      <xs:element minOccurs="0" name="Birth_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Card_dit" type="tns:CreditCard" />
+      <xs:element minOccurs="0" name="Id1" type="xs:long" />
+      <xs:element minOccurs="0" name="Vatk" type="xs:int" />
+      <xs:element minOccurs="0" name="isVip" type="xs:boolean" />
+      <xs:element minOccurs="0" name="misper_tklot" type="xs:int" />
+      <xs:element minOccurs="0" name="rishoi" type="tns:rishion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Client" nillable="true" type="tns:Client" />
+  <xs:complexType name="addres">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="building" type="xs:int" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="street" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="addres" nillable="true" type="tns:addres" />
+  <xs:complexType name="CreditCard">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cvc_number" type="xs:int" />
+      <xs:element minOccurs="0" name="exp_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="number_c" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreditCard" nillable="true" type="tns:CreditCard" />
+  <xs:complexType name="rishion">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="catgor" type="tns:catagory_of_vehicles" />
+      <xs:element minOccurs="0" name="mispar_rishion" type="xs:int" />
+      <xs:element minOccurs="0" name="tokf" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rishion" nillable="true" type="tns:rishion" />
+  <xs:simpleType name="catagory_of_vehicles">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="E" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="catagory_of_vehicles" nillable="true" type="tns:catagory_of_vehicles" />
+  <xs:complexType name="car">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="car_gear" type="tns:gear" />
+      <xs:element minOccurs="0" name="car_info" type="tns:car_type" />
+      <xs:element minOccurs="0" name="car_number" type="xs:int" />
+      <xs:element minOccurs="0" name="car_people_able" type="xs:int" />
+      <xs:element minOccurs="0" name="date_of_fix" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="moosker" type="xs:boolean" />
+      <xs:element minOccurs="0" name="number_of_car_doors" type="xs:int" />
+      <xs:element minOccurs="0" name="rishion" type="tns:rishion_rachav" />
+      <xs:element minOccurs="0" name="snif_address" type="tns:addres" />
+      <xs:element minOccurs="0" name="takin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="total_distance" type="xs:float" />
+      <xs:element minOccurs="0" name="year_of_build" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="car" nillable="true" type="tns:car" />
+  <xs:simpleType name="gear">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="automety" />
+      <xs:enumeration value="yadni" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="gear" nillable="true" type="tns:gear" />
+  <xs:complexType name="car_type">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Engine_capacety" type="xs:int" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="car_type" nillable="true" type="tns:car_type" />
+  <xs:complexType name="rishion_rachav">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="test" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="type" type="tns:catagory_of_vehicles" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rishion_rachav" nillable="true" type="tns:rishion_rachav" />
+  <xs:complexType name="Renting">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="days" type="xs:int" />
+      <xs:element minOccurs="0" name="driver" type="tns:Drivers" />
+      <xs:element minOccurs="0" name="end_rent" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ended" type="xs:boolean" />
+      <xs:element minOccurs="0" name="is_defcive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="number_at_end" type="xs:float" />
+      <xs:element minOccurs="0" name="number_at_start" type="xs:float" />
+      <xs:element minOccurs="0" name="number_drove" type="xs:float" />
+      <xs:element minOccurs="0" name="number_of_pepole" type="xs:int" />
+      <xs:element minOccurs="0" name="number_of_rishui" type="xs:int" />
+      <xs:element minOccurs="0" name="panuy" type="xs:boolean" />
+      <xs:element minOccurs="0" name="price" type="xs:float" />
+      <xs:element minOccurs="0" name="running_code" type="xs:long" />
+      <xs:element minOccurs="0" name="start_rent" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Renting" nillable="true" type="tns:Renting" />
+  <xs:complexType name="Drivers">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="first_id" type="xs:long" />
+      <xs:element minOccurs="0" name="first_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="second_id" type="xs:long" />
+      <xs:element minOccurs="0" name="second_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Drivers" nillable="true" type="tns:Drivers" />
+  <xs:complexType name="Fault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ft" type="tns:fault_type" />
+      <xs:element minOccurs="0" name="fault_number" type="xs:int" />
+      <xs:element minOccurs="0" name="name_of_shop" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_price" type="xs:float" />
+      <xs:element minOccurs="0" name="who" type="tns:who_fault" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fault" nillable="true" type="tns:Fault" />
+  <xs:simpleType name="fault_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pancher">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">130</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="blamim">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">134</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="pch">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">500</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="tzeva">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">350</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="tipulTen">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1000</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="chasmal">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">221</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mnoah">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">881</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="plastica">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">180</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="betichut">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">85</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="light">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">220</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mazgan">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">330</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="radio">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">425</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="marout">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">95</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="magavim">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">33</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gir">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">550</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="fault_type" nillable="true" type="tns:fault_type" />
+  <xs:simpleType name="who_fault">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Negligence" />
+      <xs:enumeration value="blay" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="who_fault" nillable="true" type="tns:who_fault" />
+  <xs:complexType name="Car_Fault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="chazra_mitkun" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fault_number" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Car_Fault" nillable="true" type="tns:Car_Fault" />
+  <xs:complexType name="ArrayOfRenting">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Renting" nillable="true" type="tns:Renting" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRenting" nillable="true" type="tns:ArrayOfRenting" />
+  <xs:complexType name="ArrayOffault_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="fault_type" type="tns:fault_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOffault_type" nillable="true" type="tns:ArrayOffault_type" />
+  <xs:complexType name="ArrayOfcar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="car" nillable="true" type="tns:car" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcar" nillable="true" type="tns:ArrayOfcar" />
+  <xs:complexType name="ArrayOfClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Client" nillable="true" type="tns:Client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClient" nillable="true" type="tns:ArrayOfClient" />
+</xs:schema>

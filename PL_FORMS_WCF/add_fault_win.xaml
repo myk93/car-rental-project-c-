@@ -1,0 +1,27 @@
+﻿<Window x:Class="PL_FORMS.addd_fault_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="addd_fault_win" Height="412.21" Width="447.158" Background="#FF86C3EE">
+    <Grid>
+        <Label Content="פרטי התקלה:" HorizontalAlignment="Left" Margin="310,82,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" FontSize="18" Width="115"/>
+        <Label Content="פתיחת תקלה :" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Height="41" Width="175" FlowDirection="RightToLeft" FontSize="22" FontFamily="Rockwell Extra Bold"/>
+        <Label Content="מס' תקלה:" HorizontalAlignment="Left" Margin="333,54,0,0" VerticalAlignment="Top" Width="73" FlowDirection="RightToLeft"/>
+        <TextBox Name="tb_mis_tak" HorizontalAlignment="Left" Height="23" Margin="208,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="גורם התקלה :" HorizontalAlignment="Left" Margin="295,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <Label Content="סוג התקלה:" HorizontalAlignment="Left" Margin="319,121,0,0" VerticalAlignment="Top" Height="30" Width="74" FlowDirection="RightToLeft" RenderTransformOrigin="0.033,0.5"/>
+        <ComboBox HorizontalAlignment="Left" Name="combo_kind_fault" Margin="208,124,0,0" VerticalAlignment="Top" Width="115" SelectionChanged="combo_kind_fault_SelectionChanged">
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Name="combo_gorem" Margin="208,155,0,0" VerticalAlignment="Top" Width="50">
+        </ComboBox>
+        <Label Content="מחיר התקלה :"  HorizontalAlignment="Left" Margin="295,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.157,2.81" FlowDirection="RightToLeft" Width="98"/>
+        <TextBox HorizontalAlignment="Left" Name="KM" Height="23" Margin="208,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="מוסך :" HorizontalAlignment="Left" Margin="335,219,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" RenderTransformOrigin="0.487,2.512"/>
+        <ComboBox HorizontalAlignment="Left" Name="days_fix" Margin="179,276,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.44,0" SelectionChanged="days_fix_SelectionChanged">
+        </ComboBox>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="29,334,0,0" VerticalAlignment="Top" Width="75" Background="White" Click="Button_Click_1"/>
+        <Button Content="אישור" HorizontalAlignment="Left" Margin="129,334,0,0" VerticalAlignment="Top" Width="75" Background="White" Click="Button_Click"/>
+        <Label Content=" מספר ימים (משוער):" HorizontalAlignment="Left" Margin="234,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.269"  FlowDirection="RightToLeft" FontSize="18"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="combo_musach" Margin="208,223,0,0" VerticalAlignment="Top" Width="115" SelectionChanged="combo_musach_SelectionChanged">
+        </ComboBox>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="PL_FORMS.address"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="address" Height="300" Width="300">
+    <Grid Background="#FFF0D4A2">
+        <Label Content="כתובת:" HorizontalAlignment="Left" Margin="74,38,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" FontSize="18" Width="162"/>
+        <Label Content="עיר:*" HorizontalAlignment="Left" Margin="198,98,0,0" VerticalAlignment="Top" Width="38" FlowDirection="RightToLeft"/>
+        <Label Content="רחוב:*" HorizontalAlignment="Left" Margin="174,129,0,0" VerticalAlignment="Top" Width="62" FlowDirection="RightToLeft"/>
+        <Label Content="בניין:*" HorizontalAlignment="Left" Margin="174,160,0,0" VerticalAlignment="Top" Width="62" FlowDirection="RightToLeft"/>
+        <TextBox x:Name="tb_stre" HorizontalAlignment="Left" Height="23" Margin="69,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FlowDirection="RightToLeft"/>
+        <TextBox x:Name="tb_build" HorizontalAlignment="Left" Height="23" Margin="139,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="tb_city" HorizontalAlignment="Left" Height="23" Margin="69,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FlowDirection="RightToLeft" TextChanged="tb_city_TextChanged" />
+        <Button Content="אישור" HorizontalAlignment="Right" Margin="0,213,68,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="ביטול" HorizontalAlignment="Left" Margin="60,213,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

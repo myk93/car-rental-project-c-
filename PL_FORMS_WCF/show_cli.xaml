@@ -1,0 +1,9 @@
+﻿<Window x:Class="PL_FORMS.show_cli"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="show_cli" Height="532.331" Width="556.015">
+    <Grid>
+        <DataGrid Name="dg_d" HorizontalAlignment="Left" Width="548"/>
+
+    </Grid>
+</Window>
